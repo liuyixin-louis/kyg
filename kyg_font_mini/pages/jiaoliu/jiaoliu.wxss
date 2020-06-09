@@ -1,0 +1,113 @@
+/* pages/jiaoliu/jiaoliu.wxss */
+.container{
+  background-color: #eee;
+  height:100vh;
+
+  display:flex;
+  flex-direction:column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+ 
+.list-msg {
+  padding: 0 20rpx;
+  background-color: #fff;
+  position: relative;
+}
+
+.list-msg1 {
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list-msg .list-msg2 {
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  padding: 0 10rpx;
+}
+
+.select_box {
+  background-color: #eee;
+  padding: 0 10rpx;
+  width: 93%;
+  position: absolute;
+  top: 130rpx;
+  z-index: 1;
+  overflow: hidden;
+  animation: myfirst 0.5s;
+}
+
+@keyframes myfirst {
+  from {
+      height: 0rpx;
+  }
+
+  to {
+      height: 210rpx;
+  }
+}
+
+.select_one {
+  height: 60rpx;
+  line-height: 60rpx;
+  border-bottom: 1px solid #ccc;
+}
+
+.anglesList{ 
+  display:flex;
+  align-items:center;
+  padding:25rpx 25rpx 25rpx 0;
+  margin-left:25rpx;
+  border-bottom:1px solid #f1f1f1; 
+} 
+
+
+.anglesList .anglesNavigator{ 
+  display:flex;
+  align-items:center;
+  flex-grow:1;
+} 
+.anglesList .imgBox{ 
+  flex:0 0 110rpx;
+  width:110rpx; 
+  height:110rpx; 
+  border-radius:50%; 
+  padding:5rpx; 
+  margin-right:20rpx; 
+  background:linear-gradient(#fff,#6a6969); 
+} 
+
+
+.anglesList .imgBox image{ 
+  width:110rpx; 
+  height:110rpx; 
+  border-radius:50%; 
+} 
+.anglesList .textBox{ 
+  flex-grow:1;
+} 
+.anglesList text{ 
+  display:block; 
+  max-width:12em; 
+  overflow:hidden; 
+  white-space:nowrap; 
+  text-overflow:ellipsis; 
+}
+.btnFollow{ 
+  flex-basis:140rpx; 
+  height:46rpx; 
+  border:1px solid #007ae8; 
+  border-radius:24rpx; 
+  background:#fff; 
+  text-align:center; 
+  font-size:28rpx; 
+  line-height:46rpx; 
+  color:#007ae8; 
+}

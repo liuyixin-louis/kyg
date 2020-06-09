@@ -1,0 +1,30 @@
+<!--pages/gonggu/gonggu.wxml-->
+<!-- <dropdownmenu dropDownMenuTitle='{{dropDownMenuTitle}}' dropDownMenuDistrictData='{{data1}}' 
+  bind:selectedItem='selectedItem' />
+
+<view class="container"> -->
+<view style="text-align:center;align-items:center;justify-content: center;margin: auto;"><text >历史构图</text></view>
+
+<view class="tui-list-box">
+  <!-- <view class="tui-list-head">图在左边</view> -->
+  <view class="tui-gallery-list" wx:for="{{goutu_record}}" wx:key="navList1">
+    <image class="gallery-img" src="{{item.pic}}"></image>
+    <view class="gallery-box ">
+      <text class="gallery-name">{{item.name}}</text>
+      <text class="gallery-detail">{{item.introduce}}</text>
+      <!-- <button class="gallery-button"> 加入</button> -->
+    </view>
+    <button class="mini-btn gallery-button gallery-left" type="primary" size="mini">下载</button>
+  </view>
+</view>
+<van-uploader accept="all">
+<button>上传</button>
+</van-uploader>
+
+<!-- <text>构图图</text> -->
+<!-- <text>上传</text> -->
+<!-- <button catchtap="f1"> 上传 </button>
+<text>下载</text> -->
+<!-- </view> -->
+
+

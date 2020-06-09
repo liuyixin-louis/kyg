@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/jiaoliu/jiaoliu",
+    "pages/liaotianshi/liaotianshi",
+    "pages/ziyuan/ziyuan",
+    "pages/gonggu/gonggu",
+    "pages/home/home",
+    "pages/tiezi_detail/tiezi_detail"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/jiaoliu/jiaoliu",
+        "text": "交流区"
+      },
+      {
+        "pagePath": "pages/ziyuan/ziyuan",
+        "text": "资源区"
+      },
+      {
+        "pagePath": "pages/gonggu/gonggu",
+        "text": "工具区"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "个人区"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-picker": "@vant/weapp/picker/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-row": "@vant/weapp/row/index",
+  "van-col": "@vant/weapp/col/index",
+  "van-nav-bar": "@vant/weapp/nav-bar/index",
+  "van-image": "@vant/weapp/image/index",
+  "van-uploader": "@vant/weapp/uploader/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}

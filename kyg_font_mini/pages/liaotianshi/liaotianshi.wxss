@@ -1,0 +1,20 @@
+/* pages/liaotianshi/liaotianshi.wxss */
+.liaotian_xiaoxi{
+  height: 5rpx;
+  /* border: brown; */
+  /* border:1mm; */
+}
+
+.xiaoxifasong{
+  /* display: flex;
+  flex-direction: column;
+  align-items: flex-end; */
+  position: fixed;
+  bottom:0px;
+  position: absolute;
+}
+
+.xiaoxikuang{
+  display: flex;
+  justify-content: flex-start;
+}

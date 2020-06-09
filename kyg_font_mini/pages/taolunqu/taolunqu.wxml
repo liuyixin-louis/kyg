@@ -1,0 +1,20 @@
+<!--pages/taolunqu/taolunqu.wxml-->
+<!-- <text>pages/taolunqu/taolunqu.wxml</text> -->
+<dropdownmenu dropDownMenuTitle='{{dropDownMenuTitle}}' dropDownMenuFilterData='{{data4}}' 
+  bind:selectedItem='selectedItem' />
+
+
+  
+<view class="tui-list-box">
+  <!-- <view class="tui-list-head">图在左边</view> -->
+  <view class="tui-gallery-list" wx:for="{{tiezi_array}}" wx:key="navList1">
+    
+    <image class="gallery-img" src="{{item.pic}}"></image>
+    <view class="gallery-box ">
+      <text class="gallery-name">{{item.title}}</text>
+      <text class="gallery-detail">{{item.content_abstart}}</text>
+      <!-- <button class="gallery-button"> 加入</button> -->
+    </view>
+    <button class="mini-btn gallery-button gallery-left" type="primary" size="mini" catchtap="into_tiezi_detail">查看</button>
+  </view>
+</view>

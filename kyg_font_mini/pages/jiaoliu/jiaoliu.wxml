@@ -1,0 +1,56 @@
+<!-- pages/jiaoliu/jiaoliu.wxml -->
+<dropdownmenu dropDownMenuTitle='{{dropDownMenuTitle}}' dropDownMenuDistrictData='{{ xueke}}' 
+  bind:selectedItem='selectedItem' />
+<!-- <view class= 'container'> -->
+<!-- <text>下拉框</text> -->
+<!-- <text>讨论区列表</text> -->
+<!-- <view wx:for="{{taolunqu_array}}">
+  {{index}}: {{item.name}}
+</view>
+</view> -->
+<!-- <van-picker columns="{{ columns }}" bind:change="onChange" /> -->
+
+
+<view class="tui-list-box">
+  <!-- <view class="tui-list-head">图在左边</view> -->
+  <view class="tui-gallery-list" wx:for="{{taolunqu_array}}" wx:key="navList1">
+    
+    <image class="gallery-img" src="{{item.pic}}"></image>
+    <view class="gallery-box ">
+      <text class="gallery-name">{{item.name}}</text>
+      <text class="gallery-detail">{{item.introduce}}</text>
+      <!-- <button class="gallery-button"> 加入</button> -->
+    </view>
+    <button class="mini-btn gallery-button gallery-left" type="primary" size="mini" catchtap="into_liaotian">进入</button>
+  </view>
+</view>
+<!-- <van-button type="default">默认按钮</van-button>
+<van-button type="primary">主要按钮</van-button>
+<van-button type="info">信息按钮</van-button>
+<van-button type="warning">警告按钮</van-button>
+<van-button type="danger">危险按钮</van-button> -->
+
+
+
+
+<!--下拉框  -->
+<!-- 
+<picker name="picker_hx" class="cybm_pic_1" value="{{pic_array[xuekefenlei].id}}" data-selecthx="{{pic_array[xuekefenlei].name}}" range="{{pic_array}}" range-key="{{'name'}}"  bindchange="bindPickerChange_hx"  >
+  <view class="picker" >
+    学科分类:  {{pic_array[xuekefenlei].name}}
+  </view>
+
+</picker>
+
+<picker name="picker_hx" class="cybm_pic_1" value="{{pic_array[erjixueke].id}}" data-selecthx="{{pic_array[erjixueke].name}}" range="{{pic_array}}" range-key="{{'name'}}"  bindchange="bindPickerChange_hx"  >
+  <view class="picker" >
+    学科分类:  {{pic_array[erjixueke].name}}
+  </view>
+</picker> -->
+
+<!-- <view class="taolunqu" wx:for="{{taolunquList}}">
+<text>{{item.name}}</text>
+</view> -->
+
+<!-- <button bindtap="f0"> 测试 </button> -->
+
